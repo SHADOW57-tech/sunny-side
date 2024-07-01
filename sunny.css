@@ -1,0 +1,305 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    justify-content: center;
+
+}
+
+header {
+    height: 80vh;
+    background-image: url("images/desktop/image-header.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-inline: 5vw;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+ul li {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+    font-size: large;
+}
+
+ul li:hover {
+    color: white;
+}
+
+header h1 {
+    color: white;
+    text-align: center;
+    margin-top: 10vh;
+    font-size: 3rem;
+
+}
+
+.arrow {
+    text-align: center;
+    margin-top: 5vh;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.grid {
+    height: 600px;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.box-1,
+.box-4 {
+    padding: 5vw;
+
+}
+
+.box {
+    margin-bottom: 5vh;
+    padding-right: 10vw;
+
+}
+
+.ox {
+    margin-bottom: 5vh;
+    padding-right: 10vw;
+}
+
+.box-2 {
+    background-image: url("images/desktop/image-transform.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.box-3 {
+    background-image: url("images/desktop/image-stand-out.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.box-5 {
+    background-image: url("images/desktop/image-graphic-design.jpg");
+    background-position-x: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.box-6 {
+    background-image: url("images/desktop/image-photography.jpg");
+    background-position-x: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.photo {
+
+    justify-content: center;
+    text-align: center;
+    margin-top: 300px;
+    
+}
+
+.photo>p {
+    padding: 30px 100px;
+    
+}
+
+.test {
+    margin: 50px;
+}
+
+.boss {
+    display: flex;
+    text-align: center;
+    margin-top: 100px;
+    margin: 50px;
+
+}
+
+.par {
+    padding: 2vw;
+}
+
+.clients {
+    text-align: center;
+    margin-top: 200px;
+    font-size: 30px;
+}
+
+.images {
+    border-radius: 100px;
+    margin-bottom: 50px;
+    width: 20%;
+}
+
+.par>p {
+    text-align: center;
+    margin-bottom: 70px;
+    font-size: large;
+}
+
+.boxes-container {
+    background-color: cadetblue;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    height: 100%;
+}
+
+.boxes {
+    height: 600px;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    background-position-x: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.cube-1 {
+    background-image: url("images/desktop/image-gallery-milkbottles.jpg");
+
+
+}
+
+.cube-2 {
+    background-image: url("images/desktop/image-gallery-orange.jpg");
+}
+
+.cube-3 {
+    background-image: url("images/desktop/image-gallery-cone.jpg");
+}
+
+.cube-4 {
+    background-image: url("images/desktop/image-gallery-sugarcubes.jpg");
+}
+
+.side {
+    color: darkslategray;
+}
+
+footer {
+    background-color: darkgreen;
+    padding-block: 10vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5vh;
+    min-height: 10vh;
+}
+
+.footer_links {
+    display: flex;
+    gap: 20px;
+    font-size: 1.5rem;
+
+}
+
+.footer_links :hover {
+    color: white;
+}
+
+.footer_icons img:hover {
+    color: white;
+}
+
+.footer_icons {
+    display: flex;
+    gap: 20px;
+    font-size: 1.5rem;
+    margin-top: 30px;
+
+}
+
+
+@media (max-width:500px) {
+    header {
+        height: 90vh;
+        background-image: url("images/mobile/image-header.jpg");
+        padding: 10vw;
+        width: 100%;
+    }
+    ul li {
+        margin: 2vw;
+        font-size: larger;
+    }
+
+    .grid-container {
+        grid-template-columns: 1fr;
+
+    }
+
+    .box-1,
+    .box-4 {
+        text-align: center;
+        font-size: x-large;
+    }
+
+    .boss {
+        display: grid;
+        font-size: x-large;
+    }
+
+    .photo {
+        font-size: x-large;
+    }
+
+    .boxes-container {
+        grid-template-columns: 1fr 1fr;
+        height: 10%;
+        width: 100%;
+        display: grid;
+        background-position-x: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .cube-1 {
+        background-image: url("images/mobile/image-gallery-milkbottles.jpg");
+    }
+
+    .cube-2 {
+        background-image: url("images/mobile/image-gallery-orange.jpg");
+    }
+
+    .cube-3 {
+        background-image: url("images/mobile/image-gallery-cone.jpg");
+    }
+
+    .cube-4 {
+        background-image: url("images/mobile/image-gallery-sugar-cubes.jpg");
+    }
+    .cube-1{
+        height: 200px;
+    }
+    .cube-2{
+        height: 200px;
+    }
+    .cube-3{
+        height: 200px;
+    }
+    .cube-4{
+        height: 200px;
+    }
+}
